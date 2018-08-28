@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+    <script src="js/jquery-1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+	// if user clicked on button, the overlay layer or the dialogbox, close the dialog	
+	        $('a.btn-ok, #msb-nt').click(function () {		
+		        $('#dialog-overlay, #dialog-box').hide();		
+	        });
+	// if user resize the window, call the same function again
+	// to make sure the overlay fills the screen and dialogbox aligned to center	
+	    $(window).resize(function () {
+		    if (!$('#dialog-box').is(':hidden')) popup();		
+	    });	
+    });
+        function popup(message) {	
+	        var maskHeight = $(document).height();  
+	        var maskWidth = $(window).width();
+	        var dialogTop =  (maskHeight/3) - ($('#dialog-box').height());  
+	        var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
+	        $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+	        $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+	        $('#dialog-message').html(message);
+		}
+    </script>
+</head>
+<body onload="popup('<p>Boss có muốn xem tiếp không?</br> (LƯU Ý SUY NGHĨ KĨ NHÉ BOSS)</p></br>')">
+	<div id="dialog-overlay" style="width:100%; height:100%;background:#000; position:absolute; top:0; left:0; z-index:3000; display:none;"></div>
+    <div id="dialog-box" style="background:#eee;width:290px; position:absolute; z-index:5000; display:none;">
+	    <div class="dialog-content" style="text-align:left; padding:10px;margin:13px;color:#666; font-size:15px;">
+	    	<div id="dialog-message"></div>
+		    <div id="msb-nt" style="background: #C5062C;border: 0;width: 22px;margin-left: 200px;-moz-border-radius: 5px;-webkit-border-radius: 5px;padding: 10px;cursor: pointer;">
+		    	<a href="3008.html" target="_top" style="font-family: 'Source Sans Pro', sans-serif;color: #fff;display: inline-block;text-decoration: none;font-weight: 700;font-size: 15px;">OK</a>
+		    </div>
+	    </div>
+    </div>	
+</body>
+</html>

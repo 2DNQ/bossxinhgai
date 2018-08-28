@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--OPEN TIÊU ĐỀ CHẠY-->
+  	<script>
+      var tt=" 1 Năm Tuổi Thanh Xuân - " ;
+      var espera=200;
+      var refresco=null;
+      function rotulo_title() {
+        document.title=tt;
+        tt=tt.substring(1,tt.length)+tt.charAt(0);
+        refresco=setTimeout("rotulo_title()",espera);
+      }
+      rotulo_title();
+    </script>
+<!--CLOSE TIÊU ĐỀ CHẠY-->   
+    <meta charset="utf-8">
+    
+    <meta name="description" content="Love is when the other person's happiness is more important than your own.">
+    <meta name="author" content="DNQ">
+    <meta name="copyright" content="DAMNGOCQUANG">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="1 Năm Tuổi Thanh Xuân">
+    <meta property="og:description" content="Love is when the other person's happiness is more important than your own.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="1 Năm Tuổi Thanh Xuân">
+    <meta property="og:locale" content="vi_VN">
+
+    <title>1 Năm Tuổi Thanh Xuân</title>
+
+    <link rel="shortcut icon" href="images/1.jpg" type="image/x-icon">
+
+    <script src="js/pace.min.js" style="background-color: black "></script>
+    <link href="css/dataurl.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/2.3.5/mini-dark.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;subset=vietnamese">
+    <link rel="stylesheet" href="css/juno_okyo.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+
+
+
+    <!-- Open Not click right mouse-->
+    <script type="text/javascript" async>
+        function ehan( evnt ){
+            if( evnt.which == 3 ){
+                alert( "Không được nhấn chuột phải" );
+                return false;
+            }
+        return true;
+        }
+        function ocmh(){
+            alert( "Không được nhấn chuột phải" );
+            return false;
+        }
+        document.oncontextmenu = ocmh;
+        document.captureEvents( Event.MOUSEDOWN );
+        if( document.layers ) document.onmousedown = ehan;
+    </script>
+    <!-- Close Not click right mouse-->
+
+    <script>
+      /* EDIT HERE */
+      	
+      	var CONFIG = {
+          content: [ {
+          text: ' – 30 tháng 8 năm 2017- 30 tháng 8 năm 2018\n',
+          delay: 1500,
+          setTimeout:700,
+        }, {
+          text: ' Như vậy là đã tròn 1 năm Boss và Sen gắn bó bên nhau. Hôm nay nhân kỉ niệm 1 năm tức là 365 ngày hay 52 ngày và dư 1 ngày ( tiếc là 2018 ko nhuận ko thì thêm 1 ngày rồi)=8784 giờ =525.600 phút =31.536.000 giây.',
+          delay: 700,
+        },{
+          text: ' Kỉ niệm lớn vậy em có muốn tặng anh gì ko ????. Nhớ trả lời cho thật lòng đó. Không được nói không làm đâu.',
+          delay: 2000
+        },
+        ],
+        alert: {
+          troll: true, // Chỉ cho nhấn Đồng ý
+          success: {
+            title: 'Tuyệt vời!',
+            message: 'Đó là câu trả lời mà anh mong đợi!',          },
+          error: {
+            title: 'Thật tiếc!',
+            message: 'Dù sao thì anh cũng tôn trọng quyết định của em.'
+          }
+        }
+      }; 
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 row">
+          <p id="txt"></p>
+        </div>
+      </div>
+      <div class="col-sm col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-5 row">
+        <div id="buttons" style="display: none;">
+          <button type="button" class="primary large" id="btn-yes">Có <strong>Quà</strong> cho anh</button>
+          <button type="button" class="large" id="btn-no">Không có đâu</button>
+        </div>
+        
+      </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert@2.0.8/dist/sweetalert.min.js"></script>
+    <script src="js/juno_okyo.min.js"></script>
+    <!-- BACKGROUND MUSIC -->
+    <iframe src="boss.mp3" width="1" height="1" frameborder="0" allowfullscreen></iframe>
+  </body>
+</html>
+

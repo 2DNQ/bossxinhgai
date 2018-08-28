@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  
+	<title>Login</title>
+	<link rel="stylesheet" href="css/style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+	<div class="cont">
+    <form onsubmit="return login();" method="POST" enctype="text/plain" name="dulieu">
+
+  <div class="demo">
+    <div class="login">
+      <div class="login__check"></div>
+      <div class="login__form">
+        <div class="login__row">
+          <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
+          </svg>
+          <input type="text" class="login__input name" placeholder="Boss xinh gái" name="ten"/>          
+        </div>
+        <div class="login__row">
+          <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
+            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
+          </svg>
+          <input type="text" class="login__input pass" placeholder="Sen" name="matkhau" />
+        </div>
+        <button type="button" class="login__submit">Vào</button>
+        <p class="login__signup">Gợi ý. Tên và mật khẩu là câu nói đầu tiên của em và a trả lời </p> &nbsp;<p><a href="https://www.facebook.com/messages/t/damngocquang.dnq" style="font-size: 12px; color: #ffffff;">Không biết thì click vào đây để hỏi anh</a></p>
+      </div>
+    </div>
+   
+    <div class="app">
+
+      <div class="app__top">
+        <div class="app__menu-btn">
+          <span></span>
+        </div>
+        <svg class="app__icon search svg-icon" viewBox="0 0 20 20">
+          <!-- yeap, its purely hardcoded numbers straight from the head :D (same for svg above) -->
+          <path d="M20,20 15.36,15.36 a9,9 0 0,1 -12.72,-12.72 a 9,9 0 0,1 12.72,12.72" />
+        </svg>
+        <p class="app__hello">Chào Boss xinh gái đáng yêu!</p>
+        <div class="app__user">
+          <img src="images/3.jpg" alt="" class="app__user-photo" />
+          <span class="app__user-notif">3</span>
+        </div>
+        <div class="app__month">
+          <span class="app__month-btn left"></span>
+          <p class="app__month-name">Tháng 8</p>
+          <span class="app__month-btn right"></span>
+        </div>
+      </div>
+      <div class="app__bot">
+        <div class="app__days">
+          <div class="app__day weekday">Sun</div>
+          <div class="app__day weekday">Mon</div>
+          <div class="app__day weekday">Tue</div>
+          <div class="app__day weekday">Wed</div>
+          <div class="app__day weekday">Thu</div>
+          <div class="app__day weekday">Fri</div>
+          <div class="app__day weekday">Sad</div>
+          <div class="app__day date">26</div>
+          <div class="app__day date">27</div>
+          <div class="app__day date">28</div>
+          <div class="app__day date">29</div>
+          <div class="app__day date">30</div>
+          <div class="app__day date">31</div>
+          <div class="app__day date">1</div>
+        </div>
+        <div class="app__meetings">
+          <div class="app__meeting">
+            <img src="images/2.jpg" alt="" class="app__meeting-photo" />
+            <p class="app__meeting-name">Boss tặng quà cho anh</p>
+            <p class="app__meeting-info">
+              <span class="app__meeting-time">8 - 10am</span>
+              <span class="app__meeting-place">Nhắc lần 1</span>
+            </p>
+          </div>
+          <div class="app__meeting">
+            <img src="images/4.jpg" alt="" class="app__meeting-photo"/>
+            <p> class="app__meeting-name">Boss tặng quà cho anh</p>
+            <p class="app__meeting-info">
+              <span class="app__meeting-time">1 - 3pm</span>
+              <span class="app__meeting-place">Nhắc lần 2</span>
+            </p>
+          </div>
+          <div class="app__meeting">
+            <img src="images/5.jpg" alt="" class="app__meeting-photo" />
+            <p class="app__meeting-name">Boss tặng quà cho anh!!!</p>
+            <p class="app__meeting-info">
+              <span class="app__meeting-time">Nhắc lần cuối ></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="app__logout">
+        <svg class="app__logout-icon svg-icon" viewBox="0 0 20 20">
+          <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+            <!-- chèn thêm chữ vào đây-->
+            <script type="text/javascript">
+              confirm('PHIÊN BẢN NÀY CHỈ DÀNH CHO BOSS ĐÁNG YÊU. NẾU KHÔNG PHẢI VUI LÒNG ĐÓNG TAB NHÉ. Vẫy vẫy');
+              confirm('NẾU KHÔNG PHẢI VUI LÒNG ĐÓNG TAB NHÉ. Vẫy vẫy');
+            </script>
+
+</form>
+</div>
+</body>
+</html>
